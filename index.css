@@ -332,6 +332,11 @@ a.explore:hover {
 }
 
 /* -----------------------RWD-------------------- */
+@media screen and (max-width: 1000px) {
+  .header-content h1 {
+    font-size: 45px;
+  }
+}
 
 @media screen and (max-width: 600px) {
   .header {
