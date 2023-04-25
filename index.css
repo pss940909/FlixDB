@@ -123,6 +123,10 @@ nav button {
   border-bottom-right-radius: 4px;
 }
 
+.email-signup button:hover {
+  color: var(--primary-color);
+}
+
 a.explore {
   background-color: var(--primary-text);
   border: 0;
@@ -131,12 +135,17 @@ a.explore {
   font-size: 16px;
   cursor: pointer;
   padding: 15px 35px;
-  font-weight: 600;
+  font-weight: 800;
   border-radius: 4px;
   margin-top: 20px;
   text-decoration: none;
   display: inline-block;
   animation: button-flash 1s linear 5;
+}
+
+a.explore:hover {
+  background-color: var(--white);
+  color: var(--primary-text);
 }
 
 @keyframes button-flash {
@@ -333,10 +342,25 @@ a.explore {
   }
   nav button {
     padding: 5px 10px;
+    cursor: pointer;
   }
+
+  nav button:hover {
+    background-color: var(--white);
+    color: var(--primary-text);
+  }
+
   .language-btn {
     padding: 4px 8px;
+    cursor: pointer;
   }
+
+  .language-btn:hover {
+    background-color: var(--primary-text);
+    color: var(--white);
+    border: 0;
+  }
+
   .header-content {
     position: unset;
     transform: none;
@@ -345,8 +369,13 @@ a.explore {
   .header-content h1 {
     font-size: 40px;
   }
+
+  .email-signup input {
+    padding: 15px;
+  }
+
   .email-signup button {
-    font-size: 12px;
+    font-size: 18px;
     padding: 10px 15px;
   }
 
@@ -367,7 +396,7 @@ a.explore {
     font-size: 30px;
   }
   .features p {
-    font-size: 15px;
+    font-size: 18px;
   }
 
   .faq h2 {
@@ -375,6 +404,7 @@ a.explore {
   }
   .accordion li label {
     font-size: 16px;
+    padding: 20px 40px;
   }
   .accordion .content {
     font-size: 14px;
@@ -383,5 +413,38 @@ a.explore {
   .accordion li label::after {
     font-size: 22px;
     right: 25px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .header-content {
+    position: unset;
+    transform: none;
+    padding-top: 40px;
+  }
+  .header-content h1 {
+    font-size: 32px;
+    line-height: 1.5;
+  }
+  .email-signup input {
+    margin-left: 5px;
+    font-size: 18px;
+    padding: 10px;
+  }
+  .email-signup button {
+    font-size: 14px;
+  }
+  a.explore {
+    padding: 10px 35px;
+  }
+  .row .text-col h2 {
+    font-size: 36px;
+  }
+  .accordion li label {
+    font-size: 16px;
+    padding: 20px 45px;
+  }
+  .accordion .content {
+    font-size: 15px;
   }
 }
