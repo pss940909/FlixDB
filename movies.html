@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie App</title>
+    <link rel="shortcut icon" href="./image/favicon.ico" />
+    <link rel="bookmark" href="./image/favicon.ico" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="header-container">
+      <header>
+        <a href="./index.html" class="logo"
+          ><img src="./image/logo.png" alt="logo"
+        /></a>
+        <form id="form">
+          <input type="text" id="search" class="search" placeholder="Search" />
+        </form>
+      </header>
+    </div>
+
+    <!----------------種類tag--------------->
+    <div id="tags">
+      <div class="tag">Action</div>
+      <div class="tag">Adventure</div>
+      <div class="tag">Drama</div>
+      <div class="tag">Comedy</div>
+    </div>
+
+    <!----------- The overlay ----------->
+    <div id="myNav" class="overlay">
+      <!-- Button to close the overlay navigation -->
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+
+      <!-- Overlay content -->
+      <div class="overlay-content" id="overlay-content"></div>
+
+      <!-- arrows -->
+      <a href="javascript:void(0)" class="arrow left-arrow" id="left-arrow"
+        >&#8249;</a
+      >
+      <a href="javascript:void(0)" class="arrow right-arrow" id="right-arrow"
+        >&#8250;</a
+      >
+    </div>
+
+    <main id="main">
+      <div class="movie">
+        <img
+          src="https://images.unsplash.com/photo-1681114423407-0ff133035f15?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=60"
+          alt=""
+        />
+        <div class="movie-info">
+          <h3>Movie Title</h3>
+          <span class="green">9.8</span>
+        </div>
+
+        <div class="overview">
+          <h3>Overview</h3>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+          dolorem, nam alias adipisci ipsam vel illum cupiditate, eveniet porro.
+        </div>
+      </div>
+      <div class="movie">
+        <img
+          src="https://images.unsplash.com/photo-1681114423407-0ff133035f15?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=60"
+          alt=""
+        />
+        <div class="movie-info">
+          <h3>Movie Title</h3>
+          <span class="green">9.8</span>
+        </div>
+
+        <div class="overview">
+          <h3>Overview</h3>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+          dolorem, nam alias adipisci ipsam vel illum cupiditate, eveniet porro.
+        </div>
+      </div>
+      <div class="movie">
+        <img
+          src="https://images.unsplash.com/photo-1681114423407-0ff133035f15?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=60"
+          alt=""
+        />
+        <div class="movie-info">
+          <h3>Movie Title</h3>
+          <span class="green">9.8</span>
+        </div>
+
+        <div class="overview">
+          <h3>Overview</h3>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+          dolorem, nam alias adipisci ipsam vel illum cupiditate, eveniet porro.
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="./script.js" defer></script>
+</html>
